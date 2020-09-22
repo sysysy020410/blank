@@ -30,7 +30,7 @@ body {background-color: grey}
   
 <body>
 <div class="container">
-  <div class="box1"><h1>box1</h1>
+  <div id="box1"><h1>box1</h1>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id quam vestibulum, lacinia nunc pellentesque, hendrerit lacus. Phasellus nisl nibh, pharetra sit amet eros eu, hendrerit faucibus felis. Praesent sapien nulla, faucibus sit amet nisl non, rhoncus vehicula nulla. In pellentesque id dolor nec mollis. Cras at tempus sem. Curabitur efficitur fringilla elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lacinia turpis ac augue semper aliquam. Praesent sit amet finibus mauris. Proin at dictum dolor, sit amet ultricies nibh. Nunc at lorem nec nisl molestie tristique.
   </div>
   
@@ -55,12 +55,15 @@ body {background-color: grey}
 <style>
  
   .container{
+             background: lightblue;
              position: relative;
              top: 100px;
              width: 500px;}
   
   .container{
            display: flex;
+           justify-content: center;
+           flex-direction: column;
            background: pink;
            padding: 15px;
            margin-bottom: 15px;} 
