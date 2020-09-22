@@ -53,16 +53,22 @@ body {background-color: grey}
 </div>
 
 <style>
- 
-  .container{
-             background: pink;
-             justify-content: center;
-             top: 100px;
-             width: 500px;
-             display: flex;
-             flex-direction: column;
-             padding: 15px;
-             margin-bottom: 15px;} 
+.container{
+    
+    float:left;
+    position:relative;
+    left:50%
+}
+
+.container ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    position:relative;
+    left:-50%;
+}
+.container li{float:left;display:inline;margin-right:8px;}
 </style>
   
 </body>
