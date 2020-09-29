@@ -54,25 +54,27 @@
 	.img{display: table-cell;}
 	
 #myDiv {
-            width: 500px;
-            height: 200px;     
-            overflow: hidden;
-        }
+            width: 400px;
+	height: 300px;
+	overflow: hidden;}
+
         #hh {
-            width: 500%;
-            animation: loop 10s linear infinite;
+            width: 1200px;
+	animation: switch 5s ease-out infinite;
+
         }
        
-	@keyframes loop{
-           0% { margin-left: 0%; }
-            20% { margin-left: 0%; }
-            25% { margin-left: -100%; }
-            45% { margin-left: -100%; }
-            50% { margin-left: -200%; }
-            70% { margin-left: -200%; }
-            75% { margin-left: -300%; }
-            95% { margin-left: -300%; }
-            100% { margin-left: -400%; }
+	@keyframes switch{
+           0%, 25% {
+		margin-left: 0;
+	}
+	35%, 60% {
+		margin-left: -400px;
+	}
+	70%, 100% {
+		margin-left: -800px;
+	}
+
         }
 		
 	#fl{float: left;
