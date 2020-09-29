@@ -5,6 +5,16 @@
 
 <h1>For God's Sake</h1>    
     
+<div class="one">
+		<img src="0.jpg" alt="">
+	</div>
+	<div class="two">
+		<img src="9.jpg" alt="">	
+	</div>
+	<div class="three">
+		<img src=".8.jpg" alt="">	
+	</div>
+    
 <ul>
     <li><a href="#box1">一</a></li>
     <li><a href="#box2">二</a></li>
@@ -36,34 +46,87 @@
   
 </div>
 
-    <div id=butong_net_top style=overflow:hidden;height:100;width:90;>
-<div id=butong_net_top1>
-<img src="0.jpg">
-<img src="9.jpg">
-<img src="8.jpg">
-<img src="7.jpg">
-</div>
-<div id=butong_net_top2></div>
-</div>
-<script>
-var speed=30
-butong_net_top2.innerHTML=butong_net_top1.innerHTML //克隆butong_net_top1为butong_net_top2
-function Marquee1(){
-//当滚动至butong_net_top1与butong_net_top2交界时
-if(butong_net_top2.offsetTop-butong_net_top.scrollTop<=0)&<60;&<60;
-butong_net_top.scrollTop-=butong_net_top1.offsetHeight //butong_net_top跳到最顶端
-else{
-butong_net_top.scrollTop++;
-}
-}
-var MyMar1=setInterval(Marquee1,speed)//设置定时器
-//鼠标移上时清除定时器达到滚动停止的目的
-butong_net_top.οnmοuseοver=function() {clearInterval(MyMar1)}
-//鼠标移开时重设定时器
-butong_net_top.οnmοuseοut=function(){MyMar1=setInterval(Marquee1,speed)}
-</script>
-
 <style>
+*{margin: 0;
+  padding: 0;
+}
+.one img{
+	position: absolute;
+	width: 400px;
+	height:200px;
+}
+.two img{
+	position: absolute;
+	width: 400px;
+	height: 200px;
+}
+.three img{
+	position: absolute;
+	width: 400px;
+    height:200px;
+}
+.three {
+	animation-name: cantoons;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.two {
+	animation-name: cantoons2;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+.one {
+	animation-name: cantoons1;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+}
+    @keyframes cantoons{
+	0% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+	
+}
+@keyframes cantoons2{
+	0% {
+		opacity: 0;
+	}
+	35% {
+    opacity: 1;
+	}
+	70% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+
+	}
+}
+@keyframes cantoons1{
+	0% {
+		opacity: 0;
+	}
+	35% {
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+    }
+	100% {
+		opacity: 0;
+
+	}
+}
+    
+
 .img{display: table-cell;}
     
 @font-face {
