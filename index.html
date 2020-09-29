@@ -31,10 +31,7 @@
   </div>
   
 </div>
-    
-<body>
-    <div class="progress_bar"></div>
-</body>
+   
 
 <style>
 @font-face {
@@ -42,7 +39,13 @@
   src: url('fonts/Beauty and the Beast Sample.ttf') format('truetype');
 }
     
-body {background-color: grey}
+body{
+    background: #58a;
+    background-image: repeating-linear-gradient(30deg,
+    hsla(0,0%,100%,.1),
+    hsla(0,0%,100%,.1) 15px,
+    transparent 0,transparent 30px);
+    border-radius: 5px;
     
 h1{font-family: Beauty and the Beast Sample;
    color: red}
@@ -78,13 +81,6 @@ ul {
       background: yellow;
     }
 
-.progress_bar{
-    background: #58a;
-    background-image: repeating-linear-gradient(30deg,
-    hsla(0,0%,100%,.1),
-    hsla(0,0%,100%,.1) 15px,
-    transparent 0,transparent 30px);
-    border-radius: 5px;
 }
 </style>
 
